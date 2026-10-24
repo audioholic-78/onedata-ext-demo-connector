@@ -1,6 +1,6 @@
 # Demo: REST-Konnektor
 
-Vorlage für Partner, die ihre Schnittstelle als **Konnektor** im od marketplace anbieten möchten.
+Vorlage für Partner, die ihre Schnittstelle als **Konnektor** im one.data marketplace anbieten möchten.
 
 ## Anbieter
 
@@ -29,7 +29,7 @@ REST/JSON-Konnektor von one.data (`base_kind: http_json`) und liefert nur noch *
 
 ### So funktioniert es
 
-1. Extension im od marketplace für die Instanz **aktivieren**.
+1. Extension im one.data marketplace für die Instanz **aktivieren**.
 2. *Administration → Konnektoren → Neuer Konnektor*: Vorlage „Demo: REST-Konnektor“ wählen. URL, Paging und die
    Mapping-Version `ext-1.0.0` sind vorbelegt.
 3. **Jetzt ausführen** oder einen Zeitplan (Cron, UTC) setzen. Ergebnisse stehen im Import-Lauf bzw. Korrektur-Feed.
