@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3
+
+- Katalog-Repo heißt jetzt onedata-ext (Links und Schema-Verweis angepasst).
+
 ## 1.0.2
 
 - Bezeichnung vereinheitlicht: one.data marketplace; Ablaufgrafik aktualisiert.
