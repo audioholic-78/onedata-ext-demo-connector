@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "id": "demo-api-201", "kind": "restaurant",
+      "title": { "de": "Fischerhütte am Havelufer", "en": "Fisherman's Hut" },
+      "teaser": { "de": "<p>Frischer Fisch aus der Havel mit Blick aufs Wasser.</p>" },
+      "location": { "street": "Uferweg 7", "zip": 14542, "city": "Werder (Havel)", "lat": 52.3791, "lon": 12.9402 },
+      "tags": ["leisure"]
+    },
+    {
+      "id": "demo-api-202", "kind": "sight",
+      "title": { "de": "Kletterwald Wannsee" },
+      "location": { "city": "Berlin", "lat": 52.4203, "lon": 13.1614 },
+      "tags": ["sport", "nature"]
+    }
+  ],
+  "links": {}
+}

@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "id": "demo-api-101", "kind": "sight",
+      "title": { "de": "Nikolaikirche Potsdam", "en": "St. Nicholas' Church" },
+      "teaser": { "de": "<p>Klassizistischer Kuppelbau am Alten Markt.</p>", "en": "<p>Neoclassical domed church on the Old Market.</p>" },
+      "location": { "street": "Am Alten Markt", "zip": 14467, "city": "Potsdam", "lat": 52.3958, "lon": 13.0596 },
+      "url": "https://www.example.org/nikolaikirche",
+      "tags": ["culture"]
+    },
+    {
+      "id": "demo-api-102", "kind": "sight",
+      "title": { "de": "Park Babelsberg", "en": "Babelsberg Park" },
+      "teaser": { "de": "<p>Landschaftspark am Tiefen See – UNESCO-Welterbe.</p>" },
+      "location": { "street": "Park Babelsberg", "zip": 14482, "city": "Potsdam", "lat": 52.4069, "lon": 13.0928 },
+      "tags": ["nature", "culture"]
+    }
+  ],
+  "links": {
+    "next": "https://raw.githubusercontent.com/audioholic-78/onedata-ext-demo-connector/main/samples/page-2.json"
+  }
+}

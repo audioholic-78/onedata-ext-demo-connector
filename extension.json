@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/audioholic-78/one-data-extensions/main/schema/extension.schema.json",
+  "manifest_version": 1,
+  "id": "de.destination-one.demo-connector",
+  "name": "Demo: REST-Konnektor",
+  "version": "1.0.0",
+  "kind": "connector",
+  "runtime": "declarative",
+  "summary": "Beispiel-Extension für Partner: bindet eine paginierte JSON-Schnittstelle als Konnektor an one.data an.",
+  "publisher": {
+    "name": "destination.one GmbH",
+    "url": "https://www.destination.one",
+    "email": "info@destination.one"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/audioholic-78/onedata-ext-demo-connector",
+  "requires": { "onedata": ">=1.35" },
+  "categories": ["rest", "json", "demo"],
+  "data_egress": false,
+  "connector": {
+    "base_kind": "http_json",
+    "source_system": "demo-connector",
+    "config": {
+      "url": "https://raw.githubusercontent.com/audioholic-78/onedata-ext-demo-connector/main/samples/page-1.json",
+      "items_path": "items",
+      "id_path": "id",
+      "type_path": "kind",
+      "next_path": "links.next",
+      "max_pages": 10
+    },
+    "mapping": "mapping.json",
+    "hint": "Läuft ohne Zugangsdaten gegen die Beispieldaten im Repo. Für eine echte Schnittstelle URL und Secret (credentials_ref) anpassen."
+  }
+}

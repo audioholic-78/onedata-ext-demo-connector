@@ -1,0 +1,25 @@
+{
+  "entity_type": { "source": "kind", "map": { "sight": "poi", "restaurant": "poi" } },
+  "id": "id",
+  "fields": [
+    { "target": "designation", "source": "title.de", "transform": ["trim"], "required": true },
+    { "target": "name", "i18n": { "de-DE": "title.de", "en-GB": "title.en" } },
+    { "target": "texts.teaserSummer", "i18n": { "de-DE": "teaser.de", "en-GB": "teaser.en" }, "transform": ["strip_html"] },
+    { "target": "address.street", "source": "location.street" },
+    { "target": "address.postalCode", "source": "location.zip", "transform": ["string"] },
+    { "target": "address.city", "source": "location.city" },
+    { "target": "geo.latitude", "source": "location.lat", "transform": ["float"], "required": true },
+    { "target": "geo.longitude", "source": "location.lon", "transform": ["float"], "required": true },
+    { "target": "contact.website", "i18n": { "de-DE": "url" } },
+    {
+      "target": "categories", "source": "tags[*]",
+      "map": {
+        "culture": "a1000000-0000-0000-0000-000000000003",
+        "nature": "a1000000-0000-0000-0000-000000000002",
+        "leisure": "a1000000-0000-0000-0000-000000000001",
+        "sport": "a1000000-0000-0000-0000-000000000004"
+      },
+      "unmapped": "drop", "required": true
+    }
+  ]
+}
