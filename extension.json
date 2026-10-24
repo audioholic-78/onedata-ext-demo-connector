@@ -3,7 +3,7 @@
   "manifest_version": 1,
   "id": "de.destination-one.demo-connector",
   "name": "Demo: REST-Konnektor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "kind": "connector",
   "runtime": "declarative",
   "summary": "Beispiel-Extension für Partner: bindet eine paginierte JSON-Schnittstelle als Konnektor an one.data an.",
